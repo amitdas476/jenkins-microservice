@@ -22,12 +22,12 @@ pipeline {
 		}
 		stage('Compile') {
         	steps {
-				sh 'maven clean compile'
+				sh 'mvn clean compile'
 			}
         }
 		stage('Test') {
         	steps {
-				sh 'maven test'
+				sh 'mvn test'
 			}
         }
 		stage('Integration Test') {
